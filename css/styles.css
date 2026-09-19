@@ -416,3 +416,35 @@ textarea {
     text-align: center;
   }
 }
+/* ---------- Dark theme ---------- */
+
+body.dark-theme {
+  --primary: #67bac5;
+  --primary-dark: #0f5964;
+  --background: #171b1b;
+  --surface: #222828;
+  --text: #f1f4f3;
+  --muted: #b8c1bf;
+  --border: #3d4745;
+  --shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+body.dark-theme .site-header {
+  background-color: rgba(23, 27, 27, 0.95);
+}
+
+body.dark-theme .logo,
+body.dark-theme .primary-button {
+  color: #ffffff;
+  background-color: var(--primary-dark);
+  border-color: var(--primary);
+}
+
+body.dark-theme .profile-placeholder,
+body.dark-theme .project-placeholder {
+  background: linear-gradient(145deg, #0f5964, #083f48);
+}
+
+body.dark-theme .site-footer {
+  background-color: #101414;
+}
